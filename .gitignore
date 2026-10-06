@@ -1,0 +1,9 @@
+build/
+build-web/
+server/node_modules/
+server/dist/
+client/node_modules/
+client/dist/
+client/.vite-types/
+*.tsbuildinfo
+data/
