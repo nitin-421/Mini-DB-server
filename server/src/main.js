@@ -9,7 +9,7 @@ async function bootstrap() {
 		origin: process.env.CLIENT_URL || 'http://localhost:5173',
 	});
 	app.useGlobalPipes(new common_1.ValidationPipe({ whitelist: true, transform: true }));
-	const port = Number(process.env.PORT ?? 3000);
+	const port = Number(process.env.CLIENT_URL ?? 3000);
 	await app.listen(port);
 }
 bootstrap();
