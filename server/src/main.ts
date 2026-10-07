@@ -19,7 +19,8 @@ async function bootstrap() {
     }),
   );
 
-  const port = Number(env?.CLIENT_URL);
+  const port = Number(env?.PORT ?? 3000);
+
   await app.listen(port, '0.0.0.0');
 }
 bootstrap();
