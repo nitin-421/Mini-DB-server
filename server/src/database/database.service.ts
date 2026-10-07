@@ -9,6 +9,7 @@ const projectRoot = resolve(__dirname, '../../..');
 const engineCandidates = [
   join(projectRoot, 'build-web', 'Debug', 'minidb_cli.exe'),
   join(projectRoot, 'build', 'Debug', 'minidb_cli.exe'),
+  join(projectRoot, 'build', 'minidb_cli'),
 ];
 const dataPath = join(projectRoot, 'data');
 
